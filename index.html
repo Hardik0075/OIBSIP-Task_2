@@ -1,0 +1,180 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Mentor</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar bg-body-dark navbar">
+            <div class="logo">
+            
+                <img src="./logo.jpg"  alt="Logo"  class="d-inline-block align-text-top">
+             
+            </div>
+            </div> 
+            </div>
+            <div class="links">
+                 <a class="info" href="#home">Home</a>
+                 <a class="info" href="#info">Info</a>
+                 <a class="info" href="#about_us">About HIm</a>
+            </div>
+            <div class="name">
+                 <!-- paste the link of your site here. -->
+                <a href="#" class="logo_cool"><span>M.S.Dhoni</span></a>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="femenism">
+          <div class="text" id="home">
+           <b> Mahendra Singh Dhoni</b> is an Indian professional cricketer.
+             He was captain of the Indian national team in
+              limited-overs formats from 2007 to 2017 and in
+               Test cricket from 2008 to 2014. He plays as a 
+               right-handed wicket-keeper-batsman and
+             is also the current captain of Chennai Super Kings 
+             in the Indian Premier League </div>
+          <div class="img">
+             <img class="main" src="./download.jpeg" alt=""> 
+          </div>
+        </div>
+        <div class="about_it" >
+            <h1 class="heading" id="info"> <u style=" text-decoration-color:grey;">Mahi-07</u>
+            </h1>
+          <ul>
+            <li> He was born in Ranchi in 1981.
+                He was the most successful captain of the Indian cricket team.</li>
+            <br>
+            <li> He is a right hand and medium pace bowler. 
+                He is the wicketkeeper of the Indian team.</li>
+            <br>
+            <li> He started his international career by playing in the Bangladesh tour in 2004-05. </li>
+            <br>
+            <li>India wins its second world cup in 2011 under the captaincy of Dhoni.
+                Till date, Dhoni has played in four world cup series.</li>
+        </ul>
+        </div>
+        <div class="gallery">
+            <div class="gallery_first" >
+                <img src="./1.avif" id="gallery_first" style="
+                margin-top: 90px;
+                margin-left: 100px;
+            " alt="" class="first gallery">
+            </div>
+            <div></div>
+            <!-- add text  as u need related  to ur company -->
+            <div class="box" id="about_us">
+             <p class="box" >
+                His remarkable score of 148 against
+                 Pakistan in Visakhapatnam and 183 against 
+                 Sri Lanka in Jaipur shadowed the performance
+                  of Adam Gilchrist, the Australian wicket keeper
+                   he worshipped. He hit 10 6s, the highest an 
+                   Indian has hit in a Test inning. He eventually
+                    became the captain of 
+                the Indian international cricket team and clinched
+                 the World Cup in 2011His outstanding performances in all types of cricket 
+                 made him one of the best captains we have seen in Indian cricket history. </p>
+            </div>
+            <div></div>
+            <div class="gallery_second">
+                <img src="./2.webp"  id="gallery_second" alt="" class="second gallery">
+            </div>
+            <div></div>
+            <div class="box">
+             <p class="box" >
+                He has bagged the LG’s People’s Choice Award in 2013. He was awarded Rajiv Gandhi Khel Ratna, the highest honour for a sportsperson. His sense of 
+                responsibility and decision-making capabilities are appreciated by the entire world.
+                Under his formidable captaincy, the attitude of the entire cricket team transformed.</p>
+            </div>
+            <div></div>
+            <div class="gallery_third">
+                <img src="./3.avif"  id="gallery_third" alt="" class="third gallery">
+            </div>
+        </div>
+    </section>
+    <footer>
+       <div class="footer"> 
+        <!-- contains contact details of your company and few links of social media sites like instagram, .... -->
+         <div class="footer_text">
+            
+            <p></p>
+         </div>
+         <div class="footer_images">
+            <a href="https://www.facebook.com/MSDhoni/"><img src="./fac.jpg" alt="" class="footer_first footer" ></a>
+            <a href="https://www.instagram.com/mahi7781/?hl=en"><img src="./ins.jpg" alt="" class="footer_second footer"></a>
+            <a href="https://twitter.com/msdhoni"><img src="./twi.jpg" alt="" class="footer_third footer"></a>
+         </div>
+       </div>
+
+    </footer>
+
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+     });
+    });
+    </script>
+    <script type="text/javascript">
+      var pic = document.getElementById('gallery_first');
+      var imgarr=["2.webp","3.avif","4.webp","5.jpg","1.avif"]
+      var index =0;
+
+      function changeimg(){
+        pic.setAttribute("src","./"+imgarr[index]);
+        index++;
+        if(index>4){
+          index=0;
+        }
+      }
+      setInterval(changeimg,4000)
+      var pict = document.getElementById('gallery_second');
+      var imgarray=["3.avif","4.webp","5.jpg","1.avif","2.webp"]
+      var indexx =0;
+
+      function changimg(){
+        pict.setAttribute("src","./"+imgarray[indexx]);
+        indexx++;
+        if(indexx>4){
+          indexx=0;
+        }
+      }
+      setInterval(changimg,4000) 
+
+      var pictur = document.getElementById('gallery_third');
+      var imgarry=["1.avif","2.webp","3.avif","4.webp","5.jpg"]
+      var indexz =0;
+
+      function chngimg(){
+        pictur.setAttribute("src","./"+imgarry[indexz]);
+        indexz++;
+        if(indexz>4){
+          indexz=0;
+        }
+      }
+      setInterval(chngimg,4000)
+      myID = document.getElementById("example");
+
+var myScrollFunc = function() {
+  var y = window.scrollY;
+  if (y >= 800) {
+    myID.className = "shows"
+  } else {
+    myID.className = "hides"
+  }
+};
+
+window.addEventListener("scroll", myScrollFunc);
+</script>
+
+</body>
+</html>
